@@ -18,7 +18,7 @@
 package mode.structural.decorator;
 
 /**
- * 行为模式之装饰器模式
+ * 结构模式之装饰器模式
  * @author liwen
  * @date 2021-02-25
  * @since 1.0.0

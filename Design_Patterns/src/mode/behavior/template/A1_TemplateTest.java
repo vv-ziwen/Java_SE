@@ -15,23 +15,19 @@
  */
 
 
-package mode.structural.bridge;
+package mode.behavior.template;
 
 /**
- * 结构模式之桥接模式
  * @author liwen
  * @date 2021-02-26
  * @since 1.0.0
  */
-public class A1_BridgeTest {
+public class A1_TemplateTest {
 
     public static void main(String[] args) {
-        Bridge bridge = new MyBridge();
-        bridge.setSourceable(new Source01());
-        bridge.m1();
-
-        bridge.setSourceable(new Source02());
-        bridge.m1();
-
+        String exp = "1+1";
+        AbstractCalculator calculator = new Add();
+        int i = calculator.calculate(exp, "\\+");
+        System.out.println(i);
     }
 }

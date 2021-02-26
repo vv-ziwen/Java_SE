@@ -10,28 +10,21 @@
  *
  * Date                   By              Description
  * -------------------    -----------     -------------------------------------------
- * 2021-02-26             liwen   Create the class
+ * 2021-02-27             liwen   Create the class
  * http://www.jimilab.com/
  */
 
 
-package mode.structural.bridge;
+package mode.behavior.observer;
 
 /**
- * 结构模式之桥接模式
  * @author liwen
- * @date 2021-02-26
+ * @date 2021-02-27
  * @since 1.0.0
  */
-public class A1_BridgeTest {
-
-    public static void main(String[] args) {
-        Bridge bridge = new MyBridge();
-        bridge.setSourceable(new Source01());
-        bridge.m1();
-
-        bridge.setSourceable(new Source02());
-        bridge.m1();
-
+public class ObserverSub1 implements Observer {
+    @Override
+    public void update() {
+        System.out.println("ObserverSub1 update...");
     }
 }

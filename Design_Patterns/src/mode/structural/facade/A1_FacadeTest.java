@@ -18,7 +18,7 @@
 package mode.structural.facade;
 
 /**
- * 行为模式之外观模式
+ * 结构模式之外观模式
  * @author liwen
  * @date 2021-02-25
  * @since 1.0.0

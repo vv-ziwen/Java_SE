@@ -15,23 +15,20 @@
  */
 
 
-package mode.structural.bridge;
+package mode.behavior.strategy;
 
 /**
- * 结构模式之桥接模式
+ * 行为模式之策略模式
  * @author liwen
  * @date 2021-02-26
  * @since 1.0.0
  */
-public class A1_BridgeTest {
+public class A1_StategyTest {
 
     public static void main(String[] args) {
-        Bridge bridge = new MyBridge();
-        bridge.setSourceable(new Source01());
-        bridge.m1();
-
-        bridge.setSourceable(new Source02());
-        bridge.m1();
-
+        String exp = "1+1";
+        ICalculator calculator = new Add();
+        int i = calculator.calculate(exp);
+        System.out.println(i);
     }
 }

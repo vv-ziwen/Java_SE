@@ -10,28 +10,36 @@
  *
  * Date                   By              Description
  * -------------------    -----------     -------------------------------------------
- * 2021-02-26             liwen   Create the class
+ * 2021-02-27             liwen   Create the class
  * http://www.jimilab.com/
  */
 
 
-package mode.structural.bridge;
+package mode.behavior.observer;
 
 /**
- * 结构模式之桥接模式
  * @author liwen
- * @date 2021-02-26
+ * @date 2021-02-27
  * @since 1.0.0
  */
-public class A1_BridgeTest {
+public interface Subject {
+    /**
+     * 新增观察者
+     */
+    void add(Observer observer);
 
-    public static void main(String[] args) {
-        Bridge bridge = new MyBridge();
-        bridge.setSourceable(new Source01());
-        bridge.m1();
+    /**
+     * 删除观察者
+     */
+    void del(Observer observer);
 
-        bridge.setSourceable(new Source02());
-        bridge.m1();
+    /**
+     * 通知所有观察者
+     */
+    void notifyObserver();
 
-    }
+    /**
+     * 操作
+     */
+    void operation();
 }

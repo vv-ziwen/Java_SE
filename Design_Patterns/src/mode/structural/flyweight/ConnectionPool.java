@@ -20,7 +20,7 @@ package mode.structural.flyweight;
 import java.util.Vector;
 
 /**
- * 行为模式之享元模式
+ * 结构模式之享元模式
  * 参考数据库连接池
  * 优点：
  * 不需要每一次重新创建对象，减少OS的开销，提示性能q

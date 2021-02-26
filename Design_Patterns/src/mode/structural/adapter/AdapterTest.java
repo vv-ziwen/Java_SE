@@ -18,7 +18,7 @@
 package mode.structural.adapter;
 
 /**
- * 行为模式之适配器模式
+ * 结构模式之适配器模式
  * 类适配器、对象适配器、接口适配器
  * @author liwen
  * @date 2021-02-25

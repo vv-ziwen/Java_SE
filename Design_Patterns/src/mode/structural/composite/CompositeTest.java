@@ -18,7 +18,7 @@
 package mode.structural.composite;
 
 /**
- * 行为模式之组合模式
+ * 结构模式之组合模式
  * @author liwen
  * @date 2021-02-26
  * @since 1.0.0

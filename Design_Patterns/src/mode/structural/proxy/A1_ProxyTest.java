@@ -18,7 +18,7 @@
 package mode.structural.proxy;
 
 /**
- * 行为模式之代理模式
+ * 结构模式之代理模式
  * @author liwen
  * @date 2021-02-25
  * @since 1.0.0

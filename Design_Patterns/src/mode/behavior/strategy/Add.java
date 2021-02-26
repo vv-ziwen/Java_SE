@@ -15,23 +15,17 @@
  */
 
 
-package mode.structural.bridge;
+package mode.behavior.strategy;
 
 /**
- * 结构模式之桥接模式
  * @author liwen
  * @date 2021-02-26
  * @since 1.0.0
  */
-public class A1_BridgeTest {
-
-    public static void main(String[] args) {
-        Bridge bridge = new MyBridge();
-        bridge.setSourceable(new Source01());
-        bridge.m1();
-
-        bridge.setSourceable(new Source02());
-        bridge.m1();
-
+public class Add extends AbstractCalculator implements ICalculator {
+    @Override
+    public int calculate(String exp) {
+        int[] ints = split(exp, "\\+");
+        return ints[0] + ints[1];
     }
 }

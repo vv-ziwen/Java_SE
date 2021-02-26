@@ -15,23 +15,20 @@
  */
 
 
-package mode.structural.bridge;
+package mode.behavior.strategy;
 
 /**
- * 结构模式之桥接模式
  * @author liwen
  * @date 2021-02-26
  * @since 1.0.0
  */
-public class A1_BridgeTest {
+public abstract class AbstractCalculator {
 
-    public static void main(String[] args) {
-        Bridge bridge = new MyBridge();
-        bridge.setSourceable(new Source01());
-        bridge.m1();
-
-        bridge.setSourceable(new Source02());
-        bridge.m1();
-
+    public int[] split(String exp, String opt) {
+        String[] split = exp.split(opt);
+        int[] ints = new int[2];
+        ints[0] = Integer.parseInt(split[0]);
+        ints[1] = Integer.parseInt(split[1]);
+        return ints;
     }
 }
