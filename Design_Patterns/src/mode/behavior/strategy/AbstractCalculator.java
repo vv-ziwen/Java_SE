@@ -22,7 +22,7 @@ package mode.behavior.strategy;
  * @date 2021-02-26
  * @since 1.0.0
  */
-public abstract class AbstractCalculator {
+public abstract class AbstractCalculator implements ICalculator{
 
     public int[] split(String exp, String opt) {
         String[] split = exp.split(opt);

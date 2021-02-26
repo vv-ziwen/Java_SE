@@ -22,7 +22,7 @@ package mode.behavior.strategy;
  * @date 2021-02-26
  * @since 1.0.0
  */
-public class Sub extends AbstractCalculator implements ICalculator {
+public class Sub extends AbstractCalculator {
     @Override
     public int calculate(String exp) {
         int[] ints = split(exp, "-");
